@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/tailwind.js"></script>
+    <link href="/style.css" rel="stylesheet" />
     <title>Software Engineer | Jonathan Ruedas</title>
   </head>
-  <body class="bg-black container px-4 py-8 mx-auto font">
-    <nav class="flex flex-col md:justify-between md:flex-row">
-      <h1 class="text-white text-2xl font-bold text-center">jaydi</h1>
-      <div class="flex gap-x-4 justify-center">
-        <img src="/img/github.png" alt="" />
-        <img src="/img/linkedin.png" alt="" />
-        <img src="/img/twitter.png" alt="" />
+  <body class="bg-black container px-4 pt-5 mx-auto md:p-7">
+    <nav class="flex flex-col md:justify-between md:flex-row gap-y-5">
+      <h1 class="text-white text-2xl font-bold text-center">jnthnruedas</h1>
+      <div class="flex gap-x-7 justify-center">
+        <a href="https://github.com/ruedasjnthn" target="_blank"
+          ><img src="/img/github.png" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/jonathan-ruedas-461b5513a"
+          target="_blank"
+          ><img src="/img/linkedin.png" alt=""
+        /></a>
+        <a href="https://twitter.com/jaydi_dev" target="_blank"
+          ><img src="/img/twitter.png" alt=""
+        /></a>
       </div>
     </nav>
     <header
@@ -29,24 +30,65 @@
         <div
           class="absolute top-0 -translate-x-1/2 flex items-end h-[24rem] w-[10.875rem] -z-10 bg-gradient-to-b from-light-grey/[0.01] to-light-grey md:right-0 md:translate-x-0 md:w-[20.125rem] md:h-[37.5rem] md:bg-light-grey"
         >
-          <img src="/img/me-mobile.png" alt="" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/me-tablet.png" />
+            <img src="/img/me-mobile.png" alt="" />
+          </picture>
         </div>
       </div>
-      <div class="max-w-[95%]">
-        <h1 class="text-white text-center text-[2.5rem] md:text-left">
+      <div
+        class="max-w-[24rem] mx-auto -my-16 space-y-7 md:max-w-[27.875rem] md:ml-0"
+      >
+        <h1
+          class="font-bold text-white text-center text-[2.5rem] leading-none md:text-left md: text-7xl"
+        >
           Nice to meet you! I’m
           <span
-            class="underline underline-offset-8 decoration-4 decoration-green-500"
+            class="underline underline-offset-8 decoration-4 decoration-green"
             >Jonathan</span
           >.
         </h1>
-        <p class="text-white text-center md:text-left">
+        <p
+          class="font-medium text-white text-center leading-relaxed md:text-left"
+        >
           Based in the PH, I’m a software developer passionate about building
           scalable web apps that users love.
         </p>
+        <h1
+          class="font-medium text-white text-center underline underline-offset-8 decoration-4 decoration-green md:text-left"
+        >
+          CONTACT ME
+        </h1>
       </div>
     </header>
-    <main></main>
+    <section
+      class="border-y border-white py-10 mt-36 space-y-6 text-white text-center"
+    >
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">HTML</h1>
+        <p class="font-medium">4 Years Experience</p>
+      </div>
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">CSS</h1>
+        <p class="font-medium">4 Years Experience</p>
+      </div>
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">Javascript</h1>
+        <p class="font-medium">4 Years Experience</p>
+      </div>
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">Accessibility</h1>
+        <p class="font-medium">4 Years Experience</p>
+      </div>
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">React</h1>
+        <p class="font-medium">3 Years Experience</p>
+      </div>
+      <div class="space-y-2">
+        <h1 class="font-bold text-3xl">Sass</h1>
+        <p class="font-medium">3 Years Experience</p>
+      </div>
+    </section>
     <footer></footer>
   </body>
 </html>
